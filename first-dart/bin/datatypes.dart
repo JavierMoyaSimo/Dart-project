@@ -13,9 +13,20 @@ String      cadena de caracteres
 
 // DYNAMIC TYPES
 /*
+NO ES RECOMENDABLE USARLO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 dynamic
 (Puede cambiar en tiempo de ejecución)
 */
+void  main() {
+  dynamic dynamicValue = 10;
+dynamicValue = "soy un string";
+
+//Esto sería para ver por consola el tipo de dato de la variable dynamicValue
+print(dynamicValue.runtimeType);
+}
+
+
+
 
 
 //INSTANCE OF A CLASS
