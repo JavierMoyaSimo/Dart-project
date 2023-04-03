@@ -1,8 +1,11 @@
 void main(List<String> arguments) {
   print("dev mode");
   print(arguments);
-  print(sum(4, 5));
-  
+  var counter = 2.5;
+  counter = 2.3;
+  print(sum(4, counter));
+
+   
 }
 
 ///return the sum of a with b
@@ -16,7 +19,7 @@ void main(List<String> arguments) {
 ///```JSON
 ///{"comentario": "json", "coment":"json"}
 ///```
-int sum(int a, int b) {
+double sum(int a, double b) {
   return a + b;
 }
 

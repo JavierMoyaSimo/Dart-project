@@ -23,8 +23,8 @@ dynamic
 
 //¿Como definir una variable?
 
-/*No está permitido:  XXXXXXXXXXX          -int 5age;   NO EMPEZAR CON NUMERO
-                     XXXXXXXXXXX          -int @age;   NO USAR CARACTER ESPECIAL
+/*No está permitido:  XXXXXXXXXXX          -int 5age;   NO EMPEZAR CON NUMERO!!
+                     XXXXXXXXXXX          -int @age;   NO USAR CARACTER ESPECIAL!
                                     
  Si está permitido: VVVVVVVVVVVVVV        - int _5age;     SI EMPEZAMOS CON _                                    -
                                           -int camelCase;   USAR CAMELCASE
@@ -35,6 +35,22 @@ dynamic
   bool enabled = true;
   String userName = "Javi";
 
+  var userName2 = "Piwi";
+  var counter = 0.0;
+  var isReady = false;
+
+  // var counter = 2.3;
+  // counter = 2.3;
+
+
+ 
+
   //DEFINIR MULTIPLES VARIABLES ( del mismo tipo ) EN UNA SOLA LINEA
 
   String userName1 = "Javi", userLastName1 ="Moya";
+
+
+
+
+
+
