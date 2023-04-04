@@ -5,6 +5,15 @@ void main(List<String> arguments) {
   counter = 2.3;
   print(sum(4, counter));
 
+// FINAL
+  // final String username = "javi";
+  // username = "jeje";
+
+
+
+  // CLASE PADRE OBJECT
+  Object obj;
+
    
 }
 
@@ -12,7 +21,7 @@ void main(List<String> arguments) {
 ///
 ///[a] must an integer
 ///
-///[b] must an integer
+///[b] must an double
 ///```
 ///sum(2,3) = 5
 ///```
@@ -22,6 +31,18 @@ void main(List<String> arguments) {
 double sum(int a, double b) {
   return a + b;
 }
+
+
+
+//--------------------------------------------------------------------------------
+
+// DATOS INMUTABLES
+/* 
+final // Su valor Puede ser asignado en tiempo de ejecución
+
+const // Su valor debe ser asignado antes de compilar
+*/
+
 
 
 
