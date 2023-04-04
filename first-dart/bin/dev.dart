@@ -44,5 +44,16 @@ const // Su valor debe ser asignado antes de compilar
 */
 
 
+//Definir variables inmutables:
+final String userName1 = "Javi";
+final userName2 = "Pepe";
+
+const String userName3= "Juan";
+const userName4 = "Paco";
+
+
+//
+
+
 
 
