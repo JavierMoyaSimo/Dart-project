@@ -6,7 +6,7 @@ void main() {
 
   print(users);
 
-  //PARA AGREGAR VARIOS elementos a un Map: (Map.adall({"clave": valor}))
+  //PARA AGREGAR VARIOS elementos a un Map: (Map.addAll({"clave": valor}))
   users.addAll({"user3": "Carlos", "user4": "Alex", "user5": "Juan"});
 
   // PARA MODIFICAR UN elemento del Map, modificamos simplemente su Valor
@@ -18,6 +18,10 @@ void main() {
   print("usuario eliminado: $userRemoved");
   print(users);
 
+  // PARA ELIMINAR VARIOS ELEMENTOS DE un MAP:
+  users.removeWhere((key, value) => key == "user3" || key == "user4");
+  print("Despues de eliminar varios usuarios: $users");
+
   //PARA VACIAR MAP: 2 Opciones:
   //1 (si el Map no está designado como "final"):
   users = {};
@@ -25,9 +29,24 @@ void main() {
   //2 ( si el Map está designado como final, deberemos hacerlo de esta manera, ya que con final es inmutable)
   users.clear();
   print(users);
+
+  //COMPROBAR SI EXISTE en nuestro MAP un elemento, y sino es asi, LO CREAMOS:
+  //map.putIfAbsent(CLAVE, () => { return "VALORsinoEXISTEyaENelMAP"})
+  //Esto lo que hace es, buscar el valor con la clave indicada: si existe, return dicho Valor/ Si no existe, crea ese Valor con la CLAVE indicada
+
+  users.putIfAbsent("name1", () => "Quique");
+  print(users);
+
+  //OBTNER SOLAMENTE las CLAVES de un MAP:
+  users.keys;
+  print(users.keys.toList());
+  //OBTENER SOLAMENTE los VALORES de un MAP:
+  users.values;
+  print(users.values.toList());
+  
 }
 
-// PARA DEFINIR UN MAP( Es como un JSON ) Map <tipoCLAVE, tipoVALOR> = {};
+// PARA DEFINIR UN MAP( Es como un JSON ) Map <tipoCLAVE, tipoVALOR> nombreMap = {};
 Map<String, String> nameOfMap = {};
 Map<int, String> nameOfMap2 = {};
 
