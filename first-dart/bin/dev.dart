@@ -5,9 +5,6 @@ void main(List<String> arguments) {
   counter = 2.3;
   print(sum(4, counter));
 
-// FINAL
-  // final String username = "javi";
-  // username = "jeje";
 
 
 
@@ -52,7 +49,6 @@ const String userName3= "Juan";
 const userName4 = "Paco";
 
 
-//
 
 
 
