@@ -7,11 +7,7 @@ void main() {
   print(users);
 
   //PARA AGREGAR VARIOS elementos a un Map: (Map.adall({"clave": valor}))
-  users.addAll({
-    "user3": "Carlos",
-     "user4": "Alex", 
-     "user5": "Juan"
-     });
+  users.addAll({"user3": "Carlos", "user4": "Alex", "user5": "Juan"});
 
   // PARA MODIFICAR UN elemento del Map, modificamos simplemente su Valor
   users["user1"] = "Javito";
@@ -34,3 +30,19 @@ void main() {
 // PARA DEFINIR UN MAP( Es como un JSON ) Map <tipoCLAVE, tipoVALOR> = {};
 Map<String, String> nameOfMap = {};
 Map<int, String> nameOfMap2 = {};
+
+//DEFINIR UN MAP ( con final y var ):
+
+final Map<String, String> nameOfMap3 = {};
+
+var nameOfMap4 = {
+  1: "Windows",
+  2: "Mac",
+  3: "Linux",
+};
+
+var nameOfMap5 = <int, int>{
+  1: 2,
+  2: 4,
+  4: 8,
+};
