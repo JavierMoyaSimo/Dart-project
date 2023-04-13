@@ -98,4 +98,55 @@ void main() {
 
     index++;
   }
+
+  //DO WHILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  //Se ejecuta por lo menos una vez
+
+  int index2 = 98;
+
+  do {
+    print(index2);
+    index2++;
+  } while (index2 < 100);
+
+  //FOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  for (int j = 0; j <= 10; j++) {
+    print("j = $j");
+    if (j == 5) {
+      break;
+    }
+  }
+
+  //EJEMPLO 2 FOR: RECORRER un STRING
+
+  final name = "Javier";
+
+  for (int i = 0; i < name.length; i++) {
+    print(name[i]);
+  }
+
+  //EJEMPLO 3: For in (RECORRER)
+
+  final numbers = [10, 11, 12, 13, 14];
+
+// for ( tipoDatoQueContieneElArray e in nombreArray)
+  for (int e in numbers) {
+    print(e);
+  }
+
+  // FOR CON MAPS!!!!!
+  //( con products.entries, recuperamos PARES clave:valor de cada elemento)
+  //( con products.keys, recuperamos la CLAVE de cada elemento)
+  //( con products.value, recuperamos el VALOR de cada elemento)
+
+  final products = <int, String>{
+    0: "Mac mini",
+    1: "Iphone",
+  };
+
+  for (final e in products.entries) {
+    print("key : ${e.key}");
+    print("value: ${e.value}");
+  }
 }
