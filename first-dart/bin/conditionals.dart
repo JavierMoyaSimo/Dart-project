@@ -78,4 +78,24 @@ void main() {
     default:
       print("Day off");
   }
+
+  // WHILE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  //Para "saltar" el bucle en una condicion: continue;
+  //Para "Terminar" el bucle en una condicion: break;
+
+  int index = 50;
+
+  while (index <= 100) {
+    if (index == 60) {
+      index++;
+      continue;
+    }
+    if (index % 70 == 0) {
+      print("hemos llegado");
+      break;
+    }
+    print(index);
+
+    index++;
+  }
 }
