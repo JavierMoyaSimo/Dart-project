@@ -29,9 +29,9 @@ double calculateAge({
   required int precision,
   required bool round,
 }) {
-  final birthdayDate = DateTime(1994, 10, 25);
+ 
   final current = DateTime.now();
-  final days = current.difference(birthdayDate).inDays;
+  final days = current.difference(birthday).inDays;
   final age = days / 365;
   if (round) {
     //utilizamos .roundToDouble porque la funcion "calculateAge" tiene que retornar un DOUBLE

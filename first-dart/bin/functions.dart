@@ -13,16 +13,15 @@ void main() {
   print(daysOfDifferenceDateAndBirthday / 365);
 
 //UTILIZANDO LA FUNCION!!
-  print(calculateAge(birthdayDate, 1,true));
+  print(calculateAge(birthdayDate, 1, true));
 
   final birthdayDate2 = DateTime(1999, 1, 23);
-  print(calculateAge(birthdayDate2, 1,true));
+  print(calculateAge(birthdayDate2, 1, true));
 
   //Para REDONDEAR el numero double que retorna la funcion, usaremos el SEGUNDO PARAMETRO de la funcion, para indicarle cuantos decimales queremos retornar.
   //El metodo toStringAsFixed(numeroDECIMALES) retorna un STRING del numero con dichos decimales(numeroDECIMALES).
   //En la FUNCION, return double.parse(dichometodo) para pasarlo a un numero DOUBLE.
 }
-
 
 //FUNCION para CALCULAR LA EDAD
 //tipoDatoqueDevuelvelaFuncion nombreFuncion (tipoDatoPARAMETRO PARAMETRO) {
@@ -33,17 +32,14 @@ void main() {
 //PARAMETROS(FechaCumpleaños, DecimalesAIncluir, BuleanoParaDevolverNumeroREDONDEADOoNo)
 
 double calculateAge(DateTime birthdayDate, int precision, bool round) {
-
-  
   final current = DateTime.now();
   final days = current.difference(birthdayDate).inDays;
   final age = days / 365;
-  if(round) {
+  if (round) {
     //utilizamos .roundToDouble porque la funcion "calculateAge" tiene que retornar un DOUBLE
-   return age.roundToDouble();
+    return age.roundToDouble();
   }
   return double.parse(
     age.toStringAsFixed(precision),
   );
-  
 }
