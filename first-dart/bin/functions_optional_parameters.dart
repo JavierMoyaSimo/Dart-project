@@ -39,3 +39,26 @@ double calculateAge({
     age.toStringAsFixed(precision),
   );
 }
+
+// TAMBIEN PODEMOS PASAR PARAMETROS OPCIONALES con []. /// SOLO RECOMENDABLE cuando usamos 1 unico parametro opcional
+// Estos parametros deberan llamarse EN ORDEN a la hora de llamar a la funcion
+
+double calculateAge2(
+  DateTime birthday,
+  //PARAMETROS POR DEFECTO: precision=1, round=true. Si no le decimos cuanto vale precision al llamar a la funcion, tomara el valor por defecto
+  [
+  int precision = 1,
+  bool round = true,
+]) {
+  final current = DateTime.now();
+
+  final days = current.difference(birthday).inDays;
+  final age = days / 365;
+  if (round) {
+    //utilizamos .roundToDouble porque la funcion "calculateAge" tiene que retornar un DOUBLE
+    return age.roundToDouble();
+  }
+  return double.parse(
+    age.toStringAsFixed(precision),
+  );
+}
