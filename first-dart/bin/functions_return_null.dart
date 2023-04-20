@@ -2,6 +2,15 @@
 
 void main() {
   print(calculateAge(""));
+
+  
+
+
+final age = calculateAge('');
+
+// NULL CHECK OPERATOR
+// con el operador "!", decimos a age que NO puede ser NULO
+final days = age!.inDays;
 }
 
 //para que una FUNCION PUEDA RETORNAR NULL, basta con poner ? despues del tipo de dato a retornar
@@ -46,3 +55,4 @@ void functionOne(String birthdayAsString) {
     );
   }
 }
+
